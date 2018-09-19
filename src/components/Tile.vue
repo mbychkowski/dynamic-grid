@@ -22,7 +22,9 @@
 <style>
 .tile {
     margin: 0px;
-    border: solid royalblue 5px;
+    border: solid #2c3e50 1px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px 0px rgba(44, 62, 80, 0.10), 0px 6px 20px 0px rgba(44, 62, 80, 0.09);
     justify-self: stretch;
     align-self: stretch;
 }

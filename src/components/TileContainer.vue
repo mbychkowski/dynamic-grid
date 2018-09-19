@@ -1,9 +1,10 @@
 <template>
     <div>
-        <button @click="removeTileHorz">LEFT</button>
+        <!-- <button @click="removeTileHorz">LEFT</button>
         <button @click="removeTileVert">TOP</button>
         <button @click="addTileVert">BOTTOM</button>
-        <button @click="addTileHorz">RIGHT</button>
+        <button @click="addTileHorz">RIGHT</button> -->
+        <TileButton />
         <div id="container">
             <Tile
                 v-for="thought in thoughts"
@@ -16,6 +17,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import Tile from './Tile.vue';
+    import TileButton from './TileButton.vue';
 
     let nextID = 1;
 
@@ -149,6 +151,7 @@
     --rowNum: 1;
     --colNum: 1;
 }
+
 #container {
     padding: 0; margin: 0;
     display: grid;
@@ -157,6 +160,13 @@
     grid-template-rows: repeat(var(--rowNum), 1fr);
     grid-row-gap: 12px;
     grid-column-gap: 12px;
+}
+
+button {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    background: yellowgreen;
 }
 </style>
 
