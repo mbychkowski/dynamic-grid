@@ -1,10 +1,9 @@
 <template>
     <div>
-        <!-- <button @click="removeTileHorz">LEFT</button>
+        <button @click="removeTileHorz">LEFT</button>
         <button @click="removeTileVert">TOP</button>
         <button @click="addTileVert">BOTTOM</button>
-        <button @click="addTileHorz">RIGHT</button> -->
-        <TileButton />
+        <button @click="addTileHorz">RIGHT</button>
         <div id="container">
             <Tile
                 v-for="thought in thoughts"
@@ -17,7 +16,6 @@
 <script lang="ts">
     import Vue from 'vue';
     import Tile from './Tile.vue';
-    import TileButton from './TileButton.vue';
 
     let nextID = 1;
 
