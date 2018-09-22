@@ -9,6 +9,11 @@
 <script lang="ts">
     import Vue from "vue";
 
+    type thought = {
+        id: number
+        text: string
+    }
+
     export default Vue.extend({
         props: {
             thought: {
